@@ -1,0 +1,22 @@
+extends ~layouts/columns
+
+block title
+    | Tasks
+
+block content
+    +slide_column()
+        .l-column-fit
+            +task('basic')
+                | Load the contacts from the server
+
+            +task('basic')
+                | Push contacts updates to the server
+
+            +task('optional')
+                | Handle contacts remove and insert
+
+            +task('optional')
+                | Add authentication
+
+            +task('optional')
+                | Display a toast (notification) every time a contact is updated/removed/inserted
